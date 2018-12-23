@@ -19,32 +19,8 @@
 
 根据上面的题目要求，我们可以首先建的数据模型如下
 
-$x_{ij} = \begin{cases}
-1&\text{如果顾客j由工厂i服务}\\
-0&\text{otherwise}
-\end{cases}$
+![latex](media/15454888141538/improveLatex.png)
 
-$d_j = 用户j的需求量$
-
-$c_{ij} = \text{顾客j商品交由i工厂处理的cost}$
-
-$y_i = 仓库i是否开启$
-
-$f_i = 开启仓库的代价$
-
-$b_i = 仓库的容量$
-
-
-总体Cost
-$$Sum_{cost} = \sum_{i=1}^n\sum_{j=1}^mc_{ij}x_{ij} + \sum_{i=1}^nf_iy_i$$
-
-$$Ans = min(Sum_{cost})$$
-
-
-限制条件
-
-$\sum_{i=1}^nx_{ij}=1\quad \forall j \quad \text{一个顾客只分配给一个工厂}$
-$\sum_{j=1}^md_jx_{ij} \leq b_iy_i \quad \forall i \quad \text{分配给设施的总需求量不得超过其容量} $
 
 ### 具体分析
 
